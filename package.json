@@ -1,6 +1,6 @@
 {
   "name": "nd-overlay",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "基础浮层组件，提供浮层显示隐藏、定位等特性。",
   "keywords": [],
   "homepage": "https://github.com/ndfront/nd-overlay",
@@ -20,7 +20,7 @@
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-exec": "^0.4.6",
-    "grunt-spm-server": "^0.0.3",
+    "grunt-spm-server": "^0.2.2",
     "load-grunt-tasks": "^0.6.0"
   },
   "spm": {
@@ -28,7 +28,7 @@
     "dependencies": {
       "jquery": "1.11.1",
       "nd-position": "0.0.0",
-      "nd-widget": "0.0.0"
+      "nd-widget": "0.1.0"
     },
     "devDependencies": {
       "expect.js": "0.3.1",
