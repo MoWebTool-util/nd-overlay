@@ -50,6 +50,9 @@ var Overlay = Widget.extend({
       baseXY: [0, 0]
     },
 
+    //scroll的滚动元素
+    scrollTrigger: null,
+
     // 父元素
     parentNode: document.body
   },
@@ -73,6 +76,8 @@ var Overlay = Widget.extend({
 
     // 窗口resize时，重新定位浮层
     this._setupResize();
+    //scroll
+    this._setupScroll();
 
     this.after('render', function () {
       var _pos = this.element.css('position');
@@ -145,6 +150,24 @@ var Overlay = Widget.extend({
   // resize窗口时重新定位浮层，用这个方法收集所有浮层实例
   _setupResize: function () {
     Overlay.allOverlays.push(this);
+  },
+
+  //scroll
+  _setupScroll:function(){
+    var that=this,
+      triggers=this.get('scrollTrigger');
+    if(triggers&&triggers.length){
+      triggers=$.isArray(triggers)?triggers:[triggers];
+      $.each(triggers,function(i,item){
+        item=$(item);
+        item.on('scroll',function(){
+          if (!that || !that.get('visible')) {
+            return;
+          }
+          that._setPosition();
+        })
+      });
+    }
   },
 
   // 除了 element 和 relativeElements，点击 body 后都会隐藏 element
