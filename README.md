@@ -1,6 +1,6 @@
 # nd-overlay
 
-[![spm version](http://spmjs.io/badge/nd-overlay)](http://spmjs.io/package/nd-overlay)
+[![spm version](http://spm.crossjs.com/badge/nd-overlay)](http://spm.crossjs.com/package/nd-overlay)
 
 > 基础浮层组件，提供浮层显示隐藏、定位等特性。fork 自 [arale-overlay](https://github.com/aralejs/overlay)
 
@@ -13,6 +13,6 @@ $ spm install nd-overlay --save
 ## 使用
 
 ```js
-var ndOverlay = require('nd-overlay');
-// use ndOverlay
+var Overlay = require('nd-overlay');
+// use Overlay
 ```
