@@ -5,9 +5,9 @@
 
 'use strict';
 
-var $ = require('jquery'),
-  Position = require('nd-position'),
-  Widget = require('nd-widget');
+var $ = require('jquery');
+var Position = require('nd-position');
+var Widget = require('nd-widget');
 
 // Helpers
 // -------
