@@ -2,7 +2,7 @@
 
 var Overlay = require('../index');
 var Position = require('nd-position');
-var $ = require('jquery');
+var $ = require('nd-jquery');
 var expect = require('expect.js');
 var sinon = require('sinon');
 

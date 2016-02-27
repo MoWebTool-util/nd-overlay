@@ -1,6 +1,6 @@
 {
   "name": "nd-overlay",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "基础浮层组件，提供浮层显示隐藏、定位等特性。",
   "keywords": [],
   "homepage": "https://github.com/ndfront/nd-overlay",
@@ -18,9 +18,9 @@
   "licenses": "MIT",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^1.11.1",
-    "nd-position": "^3.0.0",
-    "nd-widget": "^3.0.0"
+    "nd-position": "^3.0.1",
+    "nd-widget": "^3.0.1",
+    "nd-jquery": "^2.2.1"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
